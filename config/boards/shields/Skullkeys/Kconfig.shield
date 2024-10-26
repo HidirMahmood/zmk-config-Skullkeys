@@ -1,8 +1,8 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_CORNE_LEFT
+config SHIELD_SKULLKEYS_LEFT
     def_bool $(shields_list_contains,skullkeys_left)
 
-config SHIELD_CORNE_RIGHT
+config SHIELD_SKULLKEYS_RIGHT
     def_bool $(shields_list_contains,skullkeys_right)
