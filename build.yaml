@@ -22,8 +22,3 @@ include:
     shield: skullkeys_left
   - board: nice_nano_v2
     shield: skullkeys_right
-include:
-  - board: nice_nano_v2
-    shield: skullkeys_left
-  - board: nice_nano_v2
-    shield: skullkeys_right
