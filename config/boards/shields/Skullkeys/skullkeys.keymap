@@ -11,12 +11,13 @@
 
 #define DEFAULT 0
 #define LOWER   1
+#define UPPER   2
 
 &mt {
     tapping-term-ms = <400>;
 };
 
-/{
+{
         keymap {
                 compatible = "zmk,keymap";
 
@@ -36,7 +37,7 @@
                              &kp LCTRL &kp LSHFT &kp RET         &kp SPACE &kp BSPC  &kp RIGHT_GUI
                         >;
                 };
-                lower_layer {
+                lower_layer {  //Layer 1
                         display-name = "First Layer";
 // ------------------------------------------------------------------------------------------------------------
 // |  LYR0  | BT0 | BT1 |   BT2  |  BT3  |  BTCLR  |                 |  =   |   +   |  "-"  |  "_" |       |       |
@@ -51,6 +52,12 @@
 &kp C_VOL_DN  &trans        &trans        &kp C_PREV    &kp C_PP     &kp C_NEXT         &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans   &trans
                                           &trans        &trans       &trans             &trans    &kp DEL   &trans 
                         >;
-                };      
+                };
+                extra_0 {  //Extra_Layer 2
+                        status = "reserved";       
+                };   
+                extra_1 {  //Extra_Layer 2
+                        status = "reserved";       
+                };    
         };
 };
