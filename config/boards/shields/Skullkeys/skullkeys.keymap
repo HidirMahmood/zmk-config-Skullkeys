@@ -39,17 +39,17 @@
                 lower_layer {
                         display-name = "First Layer";
 // ------------------------------------------------------------------------------------------------------------
-// | LYR0  | BT0 | BT1 |  BT2 |  BT3 |  BTCLR |                 |  =   |   +   |  "-"  |  "_" |       |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |   F6   |                 |  F7  |   F8  |   F9  |  F10 |  F11  |  F12  |
-// |       |     |     |      |      |        |                 |      |   UP  |       |      |       |       |
-// |       |     |     |      |      |        |                 | LEFT |  DOWN | RIGHT |      |       |       |
-//                     |      |      |        |                 |      |       |       |
+// |  LYR0  | BT0 | BT1 |   BT2  |  BT3  |  BTCLR  |                 |  =   |   +   |  "-"  |  "_" |       |       |
+// |   F1   |  F2 |  F3 |   F4   |  F5   |   F6    |                 |  F7  |   F8  |   F9  |  F10 |  F11  |  F12  |
+// | M.Vol+ |     |     |        |       |         |                 |      |   UP  |       |      |       |       |
+// | M.Vol- |     |     | M.Prev |  M.PP |  M.Next |                 | LEFT |  DOWN | RIGHT |      |       |       |
+//                      |        |       |         |                 |      |       |       |
             bindings = <
-&trans   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR         &kp EQUAL &kp PLUS  &kp MINUS &kp UNDER &trans   &trans    
-&kp F1   &kp F2        &kp F3        &kp F4        &kp F5       &kp F6             &kp F7    &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
-&trans   &trans        &trans        &trans        &trans       &trans             &trans    &kp UP    &trans    &trans    &trans   &trans    
-&trans   &trans        &trans        &kp C_PREV    &kp C_PP     &kp C_NEXT         &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans   &trans
-                                     &trans        &trans       &trans             &trans    &kp DEL   &trans 
+&trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_CLR         &kp EQUAL &kp PLUS  &kp MINUS &kp UNDER &trans   &trans    
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5       &kp F6             &kp F7    &kp F8    &kp F9    &kp F10   &kp F11  &kp F12
+&kp C_VOL_UP  &trans        &trans        &trans        &trans       &trans             &trans    &kp UP    &trans    &trans    &trans   &trans    
+&kp C_VOL_DN  &trans        &trans        &kp C_PREV    &kp C_PP     &kp C_NEXT         &kp LEFT  &kp DOWN  &kp RIGHT &trans    &trans   &trans
+                                          &trans        &trans       &trans             &trans    &kp DEL   &trans 
                         >;
                 };      
         };
